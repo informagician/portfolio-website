@@ -15,7 +15,7 @@
 			xlarge:  [ '1281px',  '1680px' ],
 			large:   [ '981px',   '1280px' ],
 			medium:  [ '737px',   '980px'  ],
-			small:   [ null,      '736px'  ]
+			small:   [ null,      '736px'  ],
 		});
 
 	// Play initial animations on page load.
@@ -27,7 +27,7 @@
 
 	// Scrolly.
 		$('#nav a, .scrolly').scrolly({
-			speed: 1000,
+			speed: 500, //increased the speed from 1000 to 500
 			offset: function() { return $nav.height(); }
 		});
 
